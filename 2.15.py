@@ -7,3 +7,12 @@
 # арбуза
 # Input: 5 -> 5 1 6 5 9
 # Output: 1 9
+
+n = int(input('Количество арбузов: '))
+max = 0
+min = 10000
+for i in range(n):
+    num = int(input('Сколько килограммов арбуз: '))
+    if num > max: max = num
+    if num < min: min = num
+print('max = ', max, 'min = ', min)
