@@ -11,4 +11,13 @@ mult = int(input('Произведение чисел: '))
 x = 0
 y = 0
 while x + y <= summa:
+    if x + y < summa:
+        y += 1
+    elif x + y == summa:
+        if x * y == mult:
+            print('x = ', x, 'y = ', y)
+            break
+        else:
+            x += 1 
+
 
